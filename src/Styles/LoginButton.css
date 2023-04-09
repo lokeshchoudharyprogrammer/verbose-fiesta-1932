@@ -1,0 +1,58 @@
+ul {
+    padding: 0;
+    list-style: none;
+    background: #f2f2f2;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 16px;
+    text-align: left;
+}
+
+ul li a {
+    display: block;
+    padding: 8px 25px;
+    color: #333;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #000000;
+    background: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+ul li ul.dropdown {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 156px;
+    /* Set width of the dropdown */
+    background: white;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+.DropDown-Pic {
+    display: flex;
+}
+
+.DropDowns {
+    display: flex;
+}
+
+.btn {
+    border: none;
+    background: white;
+}

@@ -11,6 +11,7 @@ import { Carousels } from './Carousels';
 import { DailyEssentials } from '../Pages/Slider';
 import axios from 'axios';
 import { Header } from './Header';
+import Footer from '../Pages/Footer';
 // import { Comman } from './../Pages/Comman';
 // import { Summer } from '../Pages/Silders/Summer';
 
@@ -117,7 +118,7 @@ export const Navbar = () => {
             <h2>Fashion Best Sellers</h2>
             <DailyEssentials data={data && data.filter((item) => item.catogeries === "Fashion")} />
 
-
+            <Footer />
         </>
     )
 }
